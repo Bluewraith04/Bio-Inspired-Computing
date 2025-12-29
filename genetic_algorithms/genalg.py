@@ -175,21 +175,3 @@ class GA:
 # ga = GA(pop_size=50, n_strings=2, n_bits=10, obj_fn=test_func, n_generations=10, bounds=((0, 4), (1, 3)), offset_fitness=True, random_state=42)
 # ga.run()
 
-
-# # NOTE: Remember to set the random state to the last three digits of your matric number; The XXX in 210407XXX
-# # NOTE: Objective function f(x1, x2, x3, x4) = 2(x1)(x2)(x3)(x4) - 4(x1)(x2)(x3) - 2(x2)(x3)(x4) - x1(x2) - x3(x4) + x1^2 + x2^2 
-# #                                              + x3^2 + x4^2 - 2x1 - 4x2 + 4x3 - 2x4
-# def objective_function(x1, x2, x3, x4):
-#     return (2 * x1 * x2 * x3 * x4) - (4 * x1 * x2 * x3) - (2 * x2 * x3 * x4) - (x1 * x2) - (x1 * x4) + \
-#         (x1 ** 2) + (x2 ** 2) + (x3 ** 2) + (x4 ** 2)  - (2 * x1) - (4 * x2) + (4 * x3) - (2 * x4)
-    
-# bounds = (
-#     (1, 3),
-#     (0, 5),
-#     (1, 2),
-#     (0, 4)
-# )
-
-# b = [np.linspace(b[0], b[1]+1, 51) for b in bounds]
-# grids = np.meshgrid(*b)
-# print((objective_function(*grids)).min())

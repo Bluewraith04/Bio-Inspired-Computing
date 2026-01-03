@@ -8,6 +8,7 @@ __pycache__/
 
 # Assignments
 as*.py
+as*.ipynb
 
 # Distribution / packaging
 .Python
